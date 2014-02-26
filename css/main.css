@@ -233,27 +233,40 @@ sub {
   padding-top:10px;
   padding-bottom:10px;
   background-color:#00CC99;
+}
 
+.footer a {
+  color:#fff;
+}
+
+.footer a:hover{
+  text-decoration:none;
+  color:#000;
 
 }
 
 .book {
   padding: 20px;
-  float:left;
   margin-right:10px;
+  float:left;
+  
+
+  
 
 }
 
-.book .info {
-      float:left;
-      overflow:hidden;
-    
+.info { 
+  overflow:hidden;
+  margin-right:25px;
 
+ 
 }
+
 
 .results {
   padding-left:25px;
   color:#00CC99;
+
 }
 
 .results h1{
@@ -266,10 +279,30 @@ sub {
 .results h3 a{
   font-size:15px;
   color:#00CC99;
+}
+
+.results .btn{
+  color:#fff;
+  background-color:#00cc99;
 
 }
 
+.content {
+  margin-left:25px;
+  margin-bottom:25px;
+}
 
+.content li {
+  list-style:none;
+  font-weight:bold;
+}
+
+.map{
+  float:right;
+  margin-top:25px;
+  margin-right:25px;
+
+}
 
 
 
@@ -724,7 +757,8 @@ th {
     background: #fff !important; }
 
   .navbar {
-    display: none; }
+    display: none; 
+  }
 
   .table td,
   .table th {
@@ -868,7 +902,7 @@ h3, .h3 {
   h3 .small, .h3 small,
   .h3 .small {
     font-size: 65%; }
- 
+
 
 h4, .h4,
 h5, .h5,
@@ -2094,22 +2128,22 @@ output {
   width: 100%;
   height: 55px;
   padding: 6px 12px;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.42857;
   color: #555555;
   background-color: #e4e4e4;
   background-image: none;
   border: 3px solid #e4e4e4;
   border-radius: 0px;
+  border-bottom:inset;
   -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
   .form-control:focus {
-    border-color: #66afe9;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
   .form-control:-moz-placeholder {
     color: #999999; }
   .form-control::-moz-placeholder {
@@ -2444,13 +2478,13 @@ select[multiple].input-lg,
     background-color: #333333; }
 
 .btn-primary {
-  color: white;
-  background-color: #428bca;
-  border-color: #357ebd; }
+  color: #333333;
+  background-color: #fff;
+  border-color: #fff; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-    color: white;
-    background-color: #3276b1;
-    border-color: #285e8e; }
+    color: #fff;
+    background-color: #2F9B7C;
+    border-color: #2F9B7C; }
   .open .btn-primary.dropdown-toggle {
     color: white;
     background-color: #3276b1;
@@ -3658,7 +3692,7 @@ input[type="button"].btn-block {
     overflow: hidden;
     background-color: #e5e5e5; }
   .nav > li > a > img {
-    max-width: none; }
+    max-width: none; } 
 
 .nav-tabs {
   border-bottom: 1px solid #dddddd; }
@@ -3745,8 +3779,7 @@ input[type="button"].btn-block {
   border-top-left-radius: 0; }
 
 .navbar {
-  position: relative;
-  min-height: 50px;
+ min-height: 50px;
   margin-bottom: 0px;
   border: 1px solid transparent; }
   .navbar:before, .navbar:after {
@@ -3842,12 +3875,12 @@ input[type="button"].btn-block {
 .navbar-brand {
   float: left;
   padding: 15px 15px;
-  font-size: 24px;
+  font-size: 19px;
   font-family: georgia, serif;
   line-height: 25px;
   height: 50px; }
   .navbar-brand:hover, .navbar-brand:focus {
-    text-decoration: none; }
+    text-decoration: none;}
   @media (min-width: 768px) {
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
@@ -3980,7 +4013,7 @@ input[type="button"].btn-block {
   .navbar-default .navbar-brand {
     color: #fff; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #5e5e5e;
+      color: #fff;
       background-color: transparent; }
   .navbar-default .navbar-text {
     color: white; }
