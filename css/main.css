@@ -287,6 +287,25 @@ sub {
 
 }
 
+
+.fee{
+  background-color:#ccc;
+  float:right;
+  margin-right:25px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  border-radius:4px;
+  display:inline;
+margin-top:25px;
+}
+
+.reading {
+margin-top:500px;
+width:inherit;
+}
+
+
 .content {
   margin-left:25px;
   margin-bottom:25px;
@@ -301,12 +320,69 @@ sub {
   float:right;
   margin-top:25px;
   margin-right:25px;
+  z-index:100;
+  position:fixed;
+  padding-left:475px;
+
+}
+
+.headline {
+  padding-left:26px;
+  height:100px;
+}
+
+.headline .results {
+  padding:0px;
+  margin:0px;
+
+
+}
+
+.filter {
+float:right;
+margin-right:200px;
+}
+
+.reader{
+  margin:25px;
+padding-top:5px;
+color:gray;
+  
+}
+
+.reader h1{
+  text-align:center;
+
+}
+
+.reader p{
+  font-family:georgia, serif;
+  font-size:20px;
+ padding-top:25px;
+ padding-left:100px;
+ padding-right:100px;
 
 }
 
 
 
+.book-title {
+  font-family:georgia, serif;
+  font-size:19px;
+  line-height:18px;
+  margin-left:150px;
+}
 
+.book-button{
+  padding-top:38px;
+}
+
+.review {
+padding-left:25px;
+padding-top:10px;
+padding-right:300px;
+
+}
 /* ==========================================================================
    Lists
    ========================================================================== */
@@ -2499,6 +2575,22 @@ select[multiple].input-lg,
   .btn-primary .badge {
     color: #428bca;
     background-color: white; }
+ 
+ .filter .btn-primary {
+color: #fff;
+  background-color: gray;
+  border-color: #fff; 
+ }   
+
+  .info .btn-primary {
+color: #fff;
+  background-color: #00cc99;
+  border-color: #fff; 
+ } 
+.info .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    color: #fff;
+    background-color: #2F9B7C;
+    border-color: #2F9B7C; }
 
 .btn-success {
   color: white;
